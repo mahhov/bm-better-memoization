@@ -1,0 +1,23 @@
+{
+  "name": "function-caching",
+  "version": "0.0.1",
+  "description": "easily wrap functions in a caching layer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahhov/function-caching.git"
+  },
+  "keywords": [
+    "function",
+    "caching"
+  ],
+  "author": "mahhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahhov/function-caching/issues"
+  },
+  "homepage": "https://github.com/mahhov/function-caching#readme"
+}
