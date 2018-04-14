@@ -1,10 +1,11 @@
 {
-  "name": "function-caching",
+  "name": "bm-better-memoization",
   "version": "0.0.1",
   "description": "easily wrap functions in a caching layer",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,9 @@
   },
   "keywords": [
     "function",
-    "caching"
+    "caching",
+    "memoization",
+    "better"
   ],
   "author": "mahhov",
   "license": "ISC",
