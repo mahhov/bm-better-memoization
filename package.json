@@ -4,6 +4,7 @@
   "description": "easily wrap functions in a caching layer",
   "main": "src/index.js",
   "scripts": {
+    "document": "./node_modules/.bin/document examples/template.md readme.md",
     "test": "jasmine",
     "postversion": "git push && git push --tags && npm publish"
   },
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/mahhov/function-caching/issues"
   },
-  "homepage": "https://github.com/mahhov/function-caching#readme"
+  "homepage": "https://github.com/mahhov/function-caching#readme",
+  "devDependencies": {
+    "de-document-examples": "0.0.9"
+  }
 }
