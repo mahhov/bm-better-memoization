@@ -1,6 +1,10 @@
 const Cache = require('./Cache');
 
-module.exports = (func, parameterDelimiter = '\\(^_^)/') => {
+let createMem = (func, parameterDelimiter = '\\(^_^)/') => {
 	let cache = new Cache(func, parameterDelimiter);
-	return cache.perform.bind(cache);
+	let mem = cache.perform.bind(cache);
+	mem.clear = () => cache.reset();
+	return mem;
 };
+
+module.exports = createMem;

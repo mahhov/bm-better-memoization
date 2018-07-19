@@ -5,6 +5,10 @@ class Cache {
 		this.parameterDelimiter = parameterDelimiter;
 	}
 
+	reset() {
+		this.cache = {};
+	}
+
 	formKey(...parameters) {
 		return parameters.reduce((a, b) => `${a}${this.parameterDelimiter}${b}`)
 	}

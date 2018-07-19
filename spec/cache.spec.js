@@ -31,4 +31,14 @@ describe('cache', () => {
 		let sum$2 = sum$(10, 3);
 		expect(sum$1).toBe(sum$2);
 	});
+
+	it('clear', () => {
+		let sum = (a, b) => ({sum: a + b});
+		let sum$ = mem(sum);
+
+		let sum$1 = sum$(10, 3);
+		sum$.clear(sum$);
+		let sum$2 = sum$(10, 3);
+		expect(sum$1).not.toBe(sum$2);
+	});
 });
