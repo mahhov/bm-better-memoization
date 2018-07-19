@@ -1,6 +1,6 @@
 {
  "name": "bm-better-memoization",
- "version": "1.0.0",
+ "version": "1.0.1",
  "description": "easily wrap functions in a caching layer",
  "main": "src/index.js",
  "scripts": {
