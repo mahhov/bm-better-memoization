@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/mahhov/function-caching#readme",
   "devDependencies": {
-    "de-document-examples": "0.0.9"
+    "de-document-examples": "0.0.9",
+    "jasmine": "^3.1.0"
   }
 }
