@@ -10,7 +10,7 @@ class Cache {
 	}
 
 	formKey(...parameters) {
-		return parameters.reduce((a, b) => `${a}${this.parameterDelimiter}${b}`)
+		return parameters.reduce((a, b) => `${a}${this.parameterDelimiter}${b}`, '');
 	}
 
 	isCached(key) {

@@ -43,4 +43,18 @@ describe('cache', () => {
 		expect(sum$1).not.toBe(sum$2);
 		expect(sum$2).toBe(sum$3);
 	});
+
+	it('no params', () => {
+		let sum = () => ({value: 10});
+		let sum$ = mem(sum);
+
+		let sum$1 = sum$();
+		let sum$2 = sum$();
+		sum$.clear(sum$);
+		let sum$3 = sum$();
+		let sum$4 = sum$();
+		expect(sum$1).toBe(sum$2);
+		expect(sum$2).not.toBe(sum$3);
+		expect(sum$3).toBe(sum$4);
+	});
 });
