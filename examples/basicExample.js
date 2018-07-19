@@ -26,6 +26,15 @@ let memParameters = ({sum$}) => {
 	// thirteen !== five !== eleven !== elevenAgain
 };
 
+let memClear = ({sum$}) => {
+	let four = sum$(2, 2);
+	let fourAgain = sum$(2, 2);
+	sum$.clear();
+	let fourAfter = sum$(2, 2);
+	let fourAfterAgain = sum$(2, 2);
+	// (four === fourAgain) !== (fourAfter === fourAfterAgain)
+};
+
 module.exports = {
 	prep: {
 		func: prep, excludeReturn: true
@@ -38,5 +47,8 @@ module.exports = {
 	},
 	parameters: {
 		func: memParameters
+	},
+	clear: {
+		func: memClear
 	}
 };

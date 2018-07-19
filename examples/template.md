@@ -25,3 +25,7 @@ Wraps a function with a memoized function
 ### parameters
 
 !example[./basicExample.js parameters]
+
+### clearing cache
+
+!example[./basicExample.js clear]
